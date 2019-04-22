@@ -54,7 +54,7 @@ public class LinkedList<E> {
     }
 
     public void add(int index, E e) {
-        if (index < 0 || index >= size) {
+        if (index < 0 || index > size) {
             throw new IllegalArgumentException("Add failed. Illegal index");
         }
 
